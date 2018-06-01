@@ -1,0 +1,566 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:    Rocky Portfolio HTML Tamplate 
+Version:    1.0
+Last change:    1/06/18 [fixed Float bug, vf]
+Author Name: Mehedi Hassan Durjoi
+Primary use:    Portfolio Website
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Body
+2.
+-------------------------------------------------------------------*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700');
+/*font-family: 'Raleway', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
+/*font-family: 'Lato', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:500');
+/*font-family: 'Roboto', sans-serif;*/
+
+/*
+==========================================
+    Reset Css
+==========================================
+*/
+
+html,
+body
+ {
+	height: 100%;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+/*............................................. Section Padding */
+.section-padding {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+/*.............................................. Section-heading */
+.section-heading h2 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	font-size: 45px;
+}
+.section-heading .horizontal-rule {
+	height: 10px;
+	width: 120px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+}
+.black-text {
+	color: #202020;
+}
+.blackbg {
+	background-color: #202020;
+}
+.white-text {
+	color: #fff;
+}
+.whitebg {
+	background-color: #fff;
+}
+.heading-para {
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 30px;
+	margin-top: 40px;
+	text-align: center;
+	margin-bottom: 100px;
+}
+/*
+==========================================
+    Header Top Css
+==========================================
+*/
+.header_top {
+	background: #1b1b1b;
+	color: #fefefe;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.header_top p {
+	float: left;
+	padding-right: 35px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	font-size: 12px;
+}
+.header_top p > i {
+	padding-right: 10px;
+	font-size: 20px;
+}
+.header_top a {
+	font-size: 13px;
+	float: right;
+	margin-left: 25px;
+	border: 2px solid #fefefe;
+	padding: 2px 7px 2px 7px;
+	border-radius: 50%;
+	color: #fefefe;
+}
+.header_top a:hover {
+	background: #fefefe;
+	color: #000;
+	transition: 0.3s;
+}
+/*
+==========================================
+    Header Main Css
+==========================================
+*/
+
+.header-main {
+	background: url('../img/headerimg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: #ffffff;
+	font-family: 'Lato', sans-serif;
+	padding-top: 34px;
+}
+.header-main .logo {
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	font-size: 33px;
+	color: #fefefe;
+	margin-bottom: 200px;
+}
+.header-main .logo span {
+	background-color: #fefefe;
+	border: 1px solid #fefefe;
+	border-radius: 50%;
+	padding: 0px 10px 0px 10px;
+	color: #d1d1d1;
+}
+
+.header-main ul {
+	list-style: none;
+	text-transform: capitalize;
+	float: right;
+}
+.header-main ul li {
+	display: inline-block;
+	margin-left: 20px;
+}
+.header-main ul li a {
+	text-decoration: none;
+	color: #ffffff;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+}
+.header-main ul li a:hover {
+	font-weight: 600;
+}
+
+.header-main h2 {
+	font-weight: 700;
+	font-size: 40px;
+	font-style: italic;
+}
+.header-main h3 {
+	font-weight: 900;
+	font-size: 60px;
+	font-style: italic;
+	margin-bottom: 30px;
+	margin-top: 10px;
+}
+
+.header-main p {
+	font-weight: 400;
+	font-size: 18px;
+}
+
+.header-main button {
+	margin-top: 85px;
+	margin-bottom: 124px;
+	height: 60px;
+	width: 174px;
+	background: transparent;
+	border: 2px solid #ffffff;
+	border-top-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 600;
+}
+.header-main button:hover {
+	background-color: #fff;
+	color: #d1d1d1;
+	transition: 0.3s;
+}
+
+/*
+==========================================
+    About Me Css
+==========================================
+*/
+.about-me-content {
+	background-color: #1a2d52;
+	width: 100%;
+	color: #ffffff;
+	padding-left: 30px;
+	padding-top: 70px;
+	padding-right: 60px;
+	font-family: 'Raleway', sans-serif;
+}
+.about-me-content h2 {
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 52px;
+
+}
+.about-me-content p {
+	margin-top: 40px;
+	margin-bottom: 50px;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 28px;
+}
+.about-me-content h3 {
+	font-weight: 500;
+	font-size: 18px;
+	margin-bottom: 26px;
+}
+.about-me-content a {
+	color: #c0c0c0;
+	font-size: 34px;
+	margin-right: 54px;
+}
+.about-me-content a:hover {
+	color: #ffffff;
+	transition: 0.3s;
+}
+
+/*
+==========================================
+    Experiance Area Css
+==========================================
+*/
+
+.experience-area {
+	background: url('../img/experiencebg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	font-family: 'Raleway', sans-serif;
+}
+.ex-area-content {
+	color: #fff;
+
+}
+
+.ex-area-content i {
+	font-size: 64px;
+	color: #fff;
+}
+.ex-area-content h3 {
+	font-weight: 700;
+	font-size: 24px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+.icon-para {
+	font-size: 13px;
+	font-weight: 300;
+}
+
+
+.portfolio-menu ul {
+	list-style: none;
+	text-transform: uppercase;
+} 
+.portfolio-content ul li {
+	display: inline-block;
+} 
+.portfolio-content ul li a {
+	text-decoration: none;
+	color: #202020;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	font-size: 24px;
+	margin-right: 40px;
+}
+.portfolio-content ul li a:hover {
+	color: #6b0808;
+	transition: 0.3s;
+}
+
+.portfolio-item {
+	margin-top: 35px;
+}
+.portfolio-item img {
+	width: 100%;
+	height: 100%;
+
+	cursor: pointer;
+}
+.portfolio-item img:hover {
+	box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.85);
+	transition: 0.3s;
+}
+
+
+
+/*
+==========================================
+    Work Together Css
+==========================================
+*/
+
+.work-together {
+	background-color: #1a2d52;
+	color: #ffffff;
+	font-family: 'Raleway', sans-serif;
+}
+.work-together h2 {
+	font-size: 38px;
+	font-weight: 500;
+	padding-bottom: 25px;
+}
+.work-together p {
+	font-weight: 500;
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+.work-together button {
+	width: 250px;
+	height: 60px;
+	color: #1b2330;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 500;
+	border: 1px solid #fff;
+	border-radius: 10px;
+}
+.work-together button:hover {
+	background: #1a2d52;
+	color: #fff;
+	transition: 0.3s;
+}
+
+
+/*
+==========================================
+    Pricing Table Css
+==========================================
+*/
+.pricing-table {
+	background-color: #f8f8f8;
+}
+
+
+/*
+==========================================
+    Contact Us Css
+==========================================
+*/
+
+.contact-us {
+	background-color: #f2f2f2;
+}
+.contact-us .section-heading {
+	text-transform: uppercase;
+}
+.contact-us h3 {
+	font-size: 24px;
+	font-weight: 600;
+}
+.contact-us > .section-heading h2 {
+	font-size: 32px;
+	margin-top: 20px;
+}
+.contact-us > .section-heading .horizontal-rule {
+	height: 6px;
+}
+.contact-us-content {
+	font-family: 'Raleway', sans-serif;
+}
+.contact-us-content form {
+	margin-top: 126px;
+}
+.contact-us-content input {
+	border: none;
+	width: 86%;
+	background: transparent;
+}
+.contact-us-content label {
+	float: left;
+	font-weight: 400;
+	font-size: 16px;
+	color: #202020;
+	padding-left: 20px;
+	padding-right: 10px;
+}
+.contact-us-content hr {
+	margin-top: 6px;
+}
+.contact-us-content button {
+	border: 2px solid #1a2d52;
+	border-radius: 8px;
+	background-color: #1a2d52;
+	height: 75px;
+	width: 290px;
+	color: #fff;
+	font-size: 27px;
+	margin-top: 45px;
+}
+.contact-us-content button:hover {
+	background: transparent;
+	color: #1a2d52;
+	transition: 0.3s;
+}
+
+
+/*
+==========================================
+    Pricing Table Css
+==========================================
+*/
+
+.pricing-item {
+	background-color: #fff;
+}
+.pricing-item:hover {
+	box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.85);
+	transition: 0.3s;
+}
+.pricing-item h3 {
+	color: #fff;
+	font-size: 40px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	line-height: 55px;
+	position: absolute;
+	top: -95px;
+	left: -150px;
+}
+.pricing-item h4 {
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 28px;
+}
+.pricing-item .shape {
+	height: 0px;
+	width: 0px;
+	border-left: 180px solid #1a2d52;
+	border-top: 96px solid #1a2d52;
+	border-right: 171px solid transparent;
+	border-bottom: 96px solid transparent;
+	position: relative;
+}
+
+.pricing-item hr {
+	background: linear-gradient(to right, #B119DB , #644098);
+	height: 1px;
+	width: 85%;
+}
+.pricing-item ul {
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+}
+.pricing-item ul li {
+	margin-top: 15px;
+}
+.pricing-item button {
+	height: 43px;
+	width: 60%;
+	border: none;
+	background-color: #1a2d52;
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 30px;
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 30px;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 24px;
+	margin-bottom: 24px;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+}
+
+.pricing-item:hover button {
+	background: linear-gradient(to bottom, #B119DB , #644098);
+}
+
+/*
+==========================================
+    Footer Css
+==========================================
+*/
+footer {
+	background-color: #232323;
+	color: #fff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+}
+footer p {
+	line-height: 41px;
+}
+footer a i {
+	color: #ebebeb;
+	border: 1px solid #ebebeb;
+	border-radius: 50%;
+	padding: 10px;
+	margin-left: 10px;
+}
+
+footer a i:hover {
+	color: #232323;
+	background-color: #fff;
+	transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
